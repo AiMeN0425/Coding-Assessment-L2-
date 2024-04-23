@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Display</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="select-choice">
+      <h2>SELECT YOUR CHOICE</h2>
+    </div>
+
+    <div class="tabs">
+      <button class="tablink" onclick="openTab('men')">
+        <img src="man.png" alt="♂" /> Men
+      </button>
+      <button class="tablink" onclick="openTab('women')">
+        <img src="woman.png" alt="♀" /> Women
+      </button>
+      <button class="tablink" onclick="openTab('kids')">
+        <img src="baby-boy.png" alt="🧸" /> Kids
+      </button>
+    </div>
+
+    <div class="product-container" id="men-products"></div>
+    <div class="product-container" id="women-products"></div>
+    <div class="product-container" id="kids-products"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

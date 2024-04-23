@@ -1,0 +1,133 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tablink {
+  padding: 10px 40px;
+  width: auto;
+  transition: background-color 0.3s;
+  border: 2px solid pink;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.tablink img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.tablink:hover {
+  background-color: black;
+  color: white;
+  border-color: #c71585;
+}
+
+.product-container {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.product-card {
+  position: relative;
+  width: 18%;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.product-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffffff;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-style: bold;
+  display: none;
+}
+
+.product-badge.with-badge {
+  display: block;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  display: inline;
+}
+
+.product-vendor {
+  font-size: 14px;
+  margin-left: 10px;
+  display: inline;
+  margin-bottom: 5px;
+}
+
+.product-vendor::before {
+  content: "\2022";
+  margin-right: 5px;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.product-compare-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-bottom: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.product-discount {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add-to-cart-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #333;
+}
+
+.select-choice {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.select-choice h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
